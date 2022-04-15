@@ -21,4 +21,4 @@ artifacts:
   files:
     - "**/*"
   base-directory: "dist/Angular10JwtAuth/"
-  discard-paths: yes
+  discard-paths: no
