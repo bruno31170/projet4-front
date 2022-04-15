@@ -20,5 +20,4 @@ phases:
 artifacts:
   files:
     - "**/*"
-  base-directory: "dist/Angular10JwtAuth/"
-  discard-paths: no
+  base-directory: "dist"
