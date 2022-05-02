@@ -1,6 +1,6 @@
 <div class="col-md-12">
-  <div class="card card-container">
-    <img id="profile-img" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" class="profile-img-card" />
+  <div class="card card-container" style="border-radius: 10px; background-color:#c3cbd6">
+    <p style="text-align: center">Connectez-vous pour profiter de la plate-forme</p>
     <form *ngIf="!isLoggedIn" name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
       <div class="form-group">
         <label for="username">Pseudo</label>

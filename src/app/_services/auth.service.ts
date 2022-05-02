@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
+//const AUTH_API = 'http://localhost:8080/api/auth/';
 const AUTH_API = 'https://projet4-backend.herokuapp.com/api/auth/';
 
 const httpOptions = {
@@ -36,4 +37,14 @@ export class AuthService {
       httpOptions
     );
   }
+  getAllUser(): Observable<any> {
+    return this.http.get(AUTH_API + 'allUser', { responseType: 'json' });
+  }
+  deleteUser(id: Number): Observable<any> {
+    return this.http.get(AUTH_API + 'deleteUser' + id, {
+      responseType: 'text',
+    });
+  }
 }
+//http://localhost:8080/api/auth/
+//https://projet4-backend.herokuapp.com/api/auth/

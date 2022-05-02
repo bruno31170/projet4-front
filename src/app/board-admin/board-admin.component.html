@@ -1,5 +1,51 @@
 <div class="container">
-  <header class="jumbotron">
-    <p>{{ content }}</p>
+  <header class="col-12"
+    style=" overflow-y: scroll; height: 600px;background-color:#c3cbd6; margin-top: 25px; border-radius: 10px">
+    <h3>Liste des personnes inscritent</h3>
+    <div class="card" style="margin:10px; padding: 20px">
+
+      <div class="row">
+        <div class="col" style="text-align: center">
+          <label for="critere">Critère : </label>
+          <select name="critere" style="margin-left: 10px; border-radius: 10px; height: 30px; width: 150px" id="critere"
+            (change)="onChange($event)">
+            <option value="">Aucun critère</option>
+            <option value="username">Username</option>
+            <option value="email">Email</option>
+            <option value="role">Role</option>
+          </select>
+        </div>
+        <div class="col" style="text-align: center">
+          <input type="text" style="width: 300px; border-radius: 10px" placeholder="Entrez votre recherche ici" id="in"
+            [(ngModel)]="critere">
+        </div>
+        <div class="col" style="text-align: center">
+          <button type="button" style="margin-left: -20px" class="btn btn-success"
+            (click)="filter()">Rechercher</button>
+        </div>
+      </div>
+      <br>
+      <table class="mat-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Userame</th>
+            <th>Email</th>
+            <th>Role</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of listUserFiltrer; let index = index">
+            <th> {{user.id}} </th>
+            <td> {{user.username}} </td>
+            <td> {{user.email}} </td>
+            <td> {{user.roles[0].name}} </td>
+            <td>
+              <button type="button" class="btn btn-danger" (click)="deleteItem(user.id, index)">Supprimer</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </header>
 </div>

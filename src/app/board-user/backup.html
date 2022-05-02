@@ -1,0 +1,311 @@
+<div class="container">
+    <div class="col-12">
+        <div class="row" style="text-align: center">
+            <div class="col">
+                <button type="button" class="btn btn-dark" style="width: 150px; height: 50px; margin: 20px">Lieux
+                    cyclable</button>
+                <button type="button" class="btn btn-dark" style="width: 150px; height: 50px; margin: 20px">Circuit
+                    cyclable</button>
+
+            </div>
+        </div>
+
+
+        <div id="menu-tab">
+            <!----------------tableau-01---------------------------------->
+            <div id="page-wrap">
+                <div class="tabs">
+                    <!----------------onglet-01-accueil-------------------------->
+                    <div class="tab"><input id="tab-1" checked="checked" name="tab-group-1" type="radio" /> <label
+                            for="tab-1">Nord</label>
+                        <div class="content">
+                            <div class="row">
+                                <div class="col" style="text-align: center">
+                                    <h2>Entre Garonne aval et côteaux</h2>
+                                    <br>
+                                    <p>
+                                        Très dépaysante, cette balade explore cette fois-ci le versant nord d’une
+                                        Garonne un peu sauvage.
+                                        Depuis le pont de Blagnac, direction Gagnac-sur-Garonne. Le long du fleuve, vous
+                                        traverserez
+                                        plusieurs
+                                        zones vertes : les Quinze-Sols, les Ramiers de Beauzelle où se trouve le moulin
+                                        de Naudin, la forêt
+                                        du
+                                        Bouscassié. Après avoir emprunté la passerelle de Gagnac-sur Garonne, retour
+                                        vers Toulouse en
+                                        longeant
+                                        l’autre côté du fleuve. L’occasion d’admirer la roselière des Gourgues à
+                                        Fenouillet et de faire un
+                                        petit détour vers la base de loisirs de Sesquières pour se détendre au bord du
+                                        lac.
+                                        Cette balade présente un autre itinéraire, plus à l’Est, qui propose de longer
+                                        le canal latéral à la
+                                        Garonne, de faire le tour du lac de Bocage, puis de rejoindre Saint-Alban et sa
+                                        halle de briques et
+                                        de
+                                        bois, avant de s’engager vers le Château de Virebent, à Launaguet, classé aux
+                                        Monuments historiques.
+                                    </p>
+                                </div>
+                                <div class="col" style="text-align:right">
+                                    <a href="assets/Nord.jpg" target="_blank">
+                                        <img src="assets/Nord.jpg" style="height:300px;width:300px" alt="error">
+                                    </a>
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            <hr>
+                            <br>
+                            <div class="row" style="text-align:center">
+                                <div class="col">
+                                    <p>Ville : {{ nordVille1 }}</p>
+                                    <p>Ciel : {{ nordWeather1 }}</p>
+                                    <p>Température : {{ nordTemp1 }} Celsus</p>
+                                    <p>Vent : {{ nordWind1 }} km/h</p>
+                                </div>
+                                <div class="col">
+                                    <p>Ville : {{ nordVille2 }}</p>
+                                    <p>Ciel : {{ nordWeather2 }}</p>
+                                    <p>Température : {{ nordTemp2 }} Celsus</p>
+                                    <p>Vent : {{ nordWind2 }} km/h</p>
+                                </div>
+                                <div class="col">
+                                    <p>Ville : {{ nordVille3 }}</p>
+                                    <p>Ciel : {{ nordWeather3 }}</p>
+                                    <p>Température : {{ nordTemp3 }} Celsus</p>
+                                    <p>Vent : {{ nordWind3 }} km/h</p>
+                                </div>
+                                <div class="col">
+                                    <p>Indice pollution : {{ pollution }}/5</p>
+                                    <p>(1/5 très bon, 5/5 très mauvais)</p>
+                                    <a href="https://en.wikipedia.org/wiki/Air_quality_index#CAQI"
+                                        target="_blank">Cliquez-ici pour plus
+                                        de
+                                        détail sur l'indice pollution</a>
+                                </div>
+                            </div>
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+                    <!----------------onglet-02-articles-------------------------->
+                    <div class="tab"><input id="tab-2" name="tab-group-1" type="radio" /> <label for="tab-2">Est</label>
+                        <div class="content">
+                            <div class="row">
+                                <div class="col" style="text-align: center">
+                                    <h2>Au fil de l'Hers</h2>
+                                    <br>
+                                    <p>
+                                        A l’est de Toulouse, la voie verte de la Vallée de l’Hers sert de fil rouge à
+                                        cette promenade.
+                                        Idéale
+                                        pour un petit périple en famille, la piste cyclable d’une dizaine de kilomètres
+                                        offre un parcours
+                                        sécurisé et ombragé depuis la route d’Albi jusqu’à la route de Revel.
+                                        Elle traverse la base de loisirs des Argoulets et le parc de la Grande Plaine,
+                                        riches en terrains de
+                                        sports, pistes pour BMX, aires de jeux, prairies et tables de pique-nique… un
+                                        paradis pour les
+                                        enfants
+                                        !
+                                        De là, la promenade peut se prolonger vers le Château de Catala et son parc
+                                        ombragé, à Saint-Orens,
+                                        ou
+                                        rejoindre le canal du Midi.
+                                    </p>
+                                </div>
+                                <div class="col" style="text-align:right">
+                                    <a href="assets/Est.jpg" target="_blank">
+                                        <img src="assets/Est.jpg" style="height:300px;width:300px" alt="error">
+                                    </a>
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            <hr>
+                            <br>
+                            <div class="row" style="text-align:center">
+                                <div class="col">
+                                    <p>Ville : {{ estVille1 }}</p>
+                                    <p>Ciel : {{ estWeather1 }}</p>
+                                    <p>Température : {{ estTemp1 }} Celsus</p>
+                                    <p>Vent : {{ estWind1 }} km/h</p>
+                                </div>
+                                <div class="col">
+                                    <p>Ville : {{ estVille2 }}</p>
+                                    <p>Ciel : {{ estWeather2 }}</p>
+                                    <p>Température : {{ estTemp2 }} Celsus</p>
+                                    <p>Vent : {{ estWind2 }} km/h</p>
+                                </div>
+                                <div class="col">
+                                    <p>Ville : {{ estVille3 }}</p>
+                                    <p>Ciel : {{ estWeather3 }}</p>
+                                    <p>Température : {{ estTemp3 }} Celsus</p>
+                                    <p>Vent : {{ estWind3 }} km/h</p>
+                                </div>
+                                <div class="col">
+                                    <p>Indice pollution : {{ pollution }}/5</p>
+                                    <p>(1/5 très bon, 5/5 très mauvais)</p>
+                                    <a href="https://en.wikipedia.org/wiki/Air_quality_index#CAQI"
+                                        target="_blank">Cliquez-ici pour plus
+                                        de
+                                        détail sur l'indice pollution</a>
+                                </div>
+                            </div>
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+                    <!----------------onglet-03-forum-------------------------->
+                    <div class="tab"><input id="tab-3" name="tab-group-1" type="radio" /> <label for="tab-3">Sud</label>
+                        <div class="content">
+                            <div class="row">
+                                <div class="col" style="text-align: center">
+                                    <h2>Entre Garonne aval et la Ramée</h2>
+                                    <br>
+                                    <p>
+                                        Rendez-vous au pont de Blagnac pour filer vers le sud, via la coulée verte des
+                                        Amidonniers. Halte
+                                        conseillée au Bazacle pour découvrir le fonctionnement de l’usine
+                                        hydroélectrique, laquelle abrite
+                                        aussi des expositions lorsque les mesures sanitaires en vigueur le permettent.
+                                        Les randonneurs sont
+                                        invités à traverser le Pont-Neuf vers la prairie des Filtres, rive gauche, avant
+                                        de bifurquer vers
+                                        l’île du Ramier, histoire de flâner sur la
+                                        pointe nord réaménagée et de découvrir le parc de la Poudrerie récemment ouvert
+                                        au public.
+                                        La balade s’éloigne ensuite du fleuve pour gagner la Ramée, en passant par le
+                                        Château de la Reynerie
+                                        classé aux Monuments historiques, le Château de la Mounède et son parc peuplé
+                                        d’arbres centenaires.
+                                        Retour vers Toulouse le long de la promenade du Touch, en passant par le lac du
+                                        vieux pigeonnier, à
+                                        Tournefeuille.
+                                    </p>
+                                </div>
+                                <div class="col" style="text-align:right">
+                                    <a href="assets/Sud.jpg" target="_blank">
+                                        <img src="assets/Sud.jpg" style="height:300px;width:300px" alt="error">
+                                    </a>
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            <hr>
+                            <br>
+                            <div class="row" style="text-align:center">
+                                <div class="col">
+                                    <p>Ville : {{ sudVille1 }}</p>
+                                    <p>Ciel : {{ sudWeather1 }}</p>
+                                    <p>Température : {{ sudTemp1 }} Celsus</p>
+                                    <p>Vent : {{ sudWind1 }} km/h</p>
+                                </div>
+                                <div class="col">
+                                    <p>Ville : {{ sudVille2 }}</p>
+                                    <p>Ciel : {{ sudWeather2 }}</p>
+                                    <p>Température : {{ sudTemp2 }} Celsus</p>
+                                    <p>Vent : {{ sudWind2 }} km/h</p>
+                                </div>
+                                <div class="col">
+                                    <p>Ville : {{ sudVille3 }}</p>
+                                    <p>Ciel : {{ sudWeather3 }}</p>
+                                    <p>Température : {{ sudTemp3 }} Celsus</p>
+                                    <p>Vent : {{ sudWind3 }} km/h</p>
+                                </div>
+                                <div class="col">
+                                    <p>Indice pollution : {{ pollution }}/5</p>
+                                    <p>(1/5 très bon, 5/5 très mauvais)</p>
+                                    <a href="https://en.wikipedia.org/wiki/Air_quality_index#CAQI"
+                                        target="_blank">Cliquez-ici pour plus
+                                        de
+                                        détail sur l'indice pollution</a>
+                                </div>
+                            </div>
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+                    <!----------------onglet-04-libre-------------------------->
+                    <div class="tab"><input id="tab-4" name="tab-group-1" type="radio" /> <label
+                            for="tab-4">Ouest</label>
+                        <div class="content">
+                            <div class="row">
+                                <div class="col" style="text-align: center">
+                                    <h2>De l'Aussonnelle à la forêt de Bouconne</h2>
+                                    <br>
+                                    <p>
+                                        Si vous êtes prêts à vous éloigner (un peu…) de Toulouse, laissez-vous tenter
+                                        par cette promenade
+                                        qui
+                                        suit le sentier emprunté par les pèlerins de St-Jacques de Compostelle, le
+                                        GR653, dit chemin
+                                        d’Arles.
+                                        Départ à Cornebarrieu, au niveau de l’église Saint-Clément, direction Colomiers,
+                                        en longeant
+                                        l’Aussonnelle. Le sentier traverse Pibrac, où l’on peut faire une halte pour
+                                        visiter l’église
+                                        Sainte-Marie-Madeleine ou le Château de Pibrac, tous deux classés aux Monuments
+                                        historiques, ou la
+                                        basilique Sainte-Germaine.
+                                        Le GR653 poursuit sa route jusqu’à la forêt de Bouconne, où les amoureux de
+                                        sport et de nature
+                                        pourront emprunter des circuits VTT, se détendre à l’ombre des chênes, charmes,
+                                        pins, châtaigniers,
+                                        et
+                                        peut-être croiser chevreuils, lièvres ou genettes.
+                                    </p>
+                                </div>
+                                <div class="col" style="text-align:right">
+                                    <a href="assets/Ouest.jpg" target="_blank">
+                                        <img src="assets/Ouest.jpg" style="height:300px;width:300px" alt="error">
+                                    </a>
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            <hr>
+                            <br>
+                            <div class="row" style="text-align:center">
+                                <div class="col">
+                                    <p>Ville : {{ ouestVille1 }}</p>
+                                    <p>Ciel : {{ ouestWeather1 }}</p>
+                                    <p>Température : {{ ouestTemp1 }} Celsus</p>
+                                    <p>Vent : {{ ouestWind1 }} km/h</p>
+                                </div>
+                                <div class="col">
+                                    <p>Ville : {{ ouestVille2 }}</p>
+                                    <p>Ciel : {{ ouestWeather2 }}</p>
+                                    <p>Température : {{ ouestTemp2 }} Celsus</p>
+                                    <p>Vent : {{ ouestWind2 }} km/h</p>
+                                </div>
+                                <div class="col">
+                                    <p>Ville : {{ ouestVille3 }}</p>
+                                    <p>Ciel : {{ ouestWeather3 }}</p>
+                                    <p>Température : {{ ouestTemp3 }} Celsus</p>
+                                    <p>Vent : {{ ouestWind3 }} km/h</p>
+                                </div>
+                                <div class="col">
+                                    <p>Indice pollution : {{ pollution }}/5</p>
+                                    <p>(1/5 très bon, 5/5 très mauvais)</p>
+                                    <a href="https://en.wikipedia.org/wiki/Air_quality_index#CAQI"
+                                        target="_blank">Cliquez-ici pour plus
+                                        de
+                                        détail sur l'indice pollution</a>
+                                </div>
+                            </div>
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <p><br /><br /><br /></p>
+        </div>
+    </div>
+</div>

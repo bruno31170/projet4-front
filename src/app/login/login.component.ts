@@ -51,7 +51,4 @@ export class LoginComponent implements OnInit {
     //history.go(0);
     //window.location.href = window.location.href;
   }
-  changementDePage = function () {
-    this.router.navigate(['/#']);
-  };
 }
