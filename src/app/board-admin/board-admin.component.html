@@ -1,30 +1,26 @@
 <div class="container">
-  <header class="col-12"
-    style=" overflow-y: scroll; height: 600px;background-color:#c3cbd6; margin-top: 25px; border-radius: 10px">
+  <header class="col-12" id="main">
     <h3>Liste des personnes inscritent</h3>
-    <div class="card" style="margin:10px; padding: 20px">
+    <div class="card">
 
       <div class="row">
-        <div class="col" style="text-align: center">
+        <div class="col">
           <label for="critere">Critère : </label>
-          <select name="critere" style="margin-left: 10px; border-radius: 10px; height: 30px; width: 150px" id="critere"
-            (change)="onChange($event)">
+          <select name="critere" id="critere" id="critere" (change)="onChange($event)">
             <option value="">Aucun critère</option>
             <option value="username">Username</option>
             <option value="email">Email</option>
             <option value="role">Role</option>
           </select>
         </div>
-        <div class="col" style="text-align: center">
-          <input type="text" style="width: 300px; border-radius: 10px" placeholder="Entrez votre recherche ici" id="in"
-            [(ngModel)]="critere">
+        <div class="col">
+          <input type="text" placeholder="Entrez votre recherche ici" id="in" [(ngModel)]="critere">
         </div>
-        <div class="col" style="text-align: center">
-          <button type="button" style="margin-left: -20px" class="btn btn-success"
-            (click)="filter()">Rechercher</button>
+        <div class="col">
+          <button type="button" id="btn-recherche" class="btn btn-success" (click)="filter()">Rechercher</button>
         </div>
       </div>
-      <br>
+      <hr>
       <table class="mat-table">
         <thead>
           <tr>
@@ -34,6 +30,7 @@
             <th>Role</th>
           </tr>
         </thead>
+        <br>
         <tbody>
           <tr *ngFor="let user of listUserFiltrer; let index = index">
             <th> {{user.id}} </th>

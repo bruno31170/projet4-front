@@ -1,6 +1,6 @@
 <div class="col-md-12">
-  <div class="card card-container" style="border-radius: 10px; background-color:#c3cbd6">
-    <p style="text-align: center">Enregistrez-vous pour profiter de la plate-forme</p>
+  <div class="card card-container" id="main-div">
+    <h3>Creer un compte</h3>
     <form *ngIf="!isSuccessful" name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
       <div class="form-group">
         <label for="username">Pseudo</label>

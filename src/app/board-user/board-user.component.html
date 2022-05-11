@@ -9,7 +9,7 @@
               for="tab-1">Nord</label>
             <div class="content">
               <div class="row">
-                <div class="col" style="text-align: center">
+                <div class="col" id="col-text">
                   <h2>Entre Garonne aval et côteaux</h2>
                   <br>
                   <p>
@@ -28,33 +28,39 @@
                     bois, avant de s’engager vers le Château de Virebent, à Launaguet, classé aux Monuments historiques.
                   </p>
                 </div>
-                <div class="col" style="text-align:right">
+                <div class="col" id="col-img">
                   <a href="assets/Nord.jpg" target="_blank">
-                    <img src="assets/Nord.jpg" style="height:300px;width:300px" alt="error">
+                    <img src="assets/Nord.jpg" id="img" alt="error">
+                    <p style="padding-right: 90px">Cliquez sur l'image</p>
                   </a>
                 </div>
               </div>
               <br>
               <br>
+              <br>
               <hr>
               <br>
-              <div class="row" style="text-align:center">
+              <div id="titre-meteo">
+                <h4>Méteo des villes et pollution de la zone :</h4>
+                <br>
+              </div>
+              <div class="row" id="zone-meteo">
                 <div class="col">
-                  <p>Ville : {{ nordVille1 }}</p>
-                  <p>Ciel : {{ nordWeather1 }}</p>
-                  <p>Température : {{ nordTemp1 }} Celsus</p>
+                  <p><strong>{{ nordVille1 }}</strong></p>
+                  <p>{{ nordWeather1 }}</p>
+                  <p>{{ nordTemp1 }} Celsus</p>
                   <p>Vent : {{ nordWind1 }} km/h</p>
                 </div>
                 <div class="col">
-                  <p>Ville : {{ nordVille2 }}</p>
-                  <p>Ciel : {{ nordWeather2 }}</p>
-                  <p>Température : {{ nordTemp2 }} Celsus</p>
+                  <p><strong>{{ nordVille2 }}</strong></p>
+                  <p>{{ nordWeather2 }}</p>
+                  <p>{{ nordTemp2 }} Celsus</p>
                   <p>Vent : {{ nordWind2 }} km/h</p>
                 </div>
                 <div class="col">
-                  <p>Ville : {{ nordVille3 }}</p>
-                  <p>Ciel : {{ nordWeather3 }}</p>
-                  <p>Température : {{ nordTemp3 }} Celsus</p>
+                  <p><strong>{{ nordVille3 }}</strong></p>
+                  <p>{{ nordWeather3 }}</p>
+                  <p>{{ nordTemp3 }} Celsus</p>
                   <p>Vent : {{ nordWind3 }} km/h</p>
                 </div>
                 <div class="col">
@@ -62,7 +68,7 @@
                   <p>(1/5 très bon, 5/5 très mauvais)</p>
                   <a href="https://en.wikipedia.org/wiki/Air_quality_index#CAQI" target="_blank">Cliquez-ici pour plus
                     de
-                    détail sur l'indice pollution</a>
+                    détail</a>
                 </div>
               </div>
               <div>
@@ -73,7 +79,7 @@
           <div class="tab"><input id="tab-2" name="tab-group-1" type="radio" /> <label for="tab-2">Est</label>
             <div class="content">
               <div class="row">
-                <div class="col" style="text-align: center">
+                <div class="col" id="col-text">
                   <h2>Au fil de l'Hers</h2>
                   <br>
                   <p>
@@ -90,33 +96,40 @@
                     rejoindre le canal du Midi.
                   </p>
                 </div>
-                <div class="col" style="text-align:right">
+                <div class="col" id="col-img">
                   <a href="assets/Est.jpg" target="_blank">
-                    <img src="assets/Est.jpg" style="height:300px;width:300px" alt="error">
+                    <img src="assets/Est.jpg" id="img" alt="error">
+                    <p style="padding-right: 90px">Cliquez sur l'image</p>
                   </a>
                 </div>
               </div>
               <br>
               <br>
+              <br>
+              <br>
               <hr>
               <br>
-              <div class="row" style="text-align:center">
+              <div id="titre-meteo">
+                <h4>Méteo des villes et pollution de la zone :</h4>
+                <br>
+              </div>
+              <div class="row" id="zone-meteo">
                 <div class="col">
-                  <p>Ville : {{ estVille1 }}</p>
-                  <p>Ciel : {{ estWeather1 }}</p>
-                  <p>Température : {{ estTemp1 }} Celsus</p>
+                  <p><strong>{{ estVille1 }}</strong></p>
+                  <p>{{ estWeather1 }}</p>
+                  <p>{{ estTemp1 }} Celsus</p>
                   <p>Vent : {{ estWind1 }} km/h</p>
                 </div>
                 <div class="col">
-                  <p>Ville : {{ estVille2 }}</p>
-                  <p>Ciel : {{ estWeather2 }}</p>
-                  <p>Température : {{ estTemp2 }} Celsus</p>
+                  <p><strong>{{ estVille2 }}</strong></p>
+                  <p>{{ estWeather2 }}</p>
+                  <p>{{ estTemp2 }} Celsus</p>
                   <p>Vent : {{ estWind2 }} km/h</p>
                 </div>
                 <div class="col">
-                  <p>Ville : {{ estVille3 }}</p>
-                  <p>Ciel : {{ estWeather3 }}</p>
-                  <p>Température : {{ estTemp3 }} Celsus</p>
+                  <p><strong>{{ estVille3 }}</strong></p>
+                  <p>{{ estWeather3 }}</p>
+                  <p>{{ estTemp3 }} Celsus</p>
                   <p>Vent : {{ estWind3 }} km/h</p>
                 </div>
                 <div class="col">
@@ -124,7 +137,7 @@
                   <p>(1/5 très bon, 5/5 très mauvais)</p>
                   <a href="https://en.wikipedia.org/wiki/Air_quality_index#CAQI" target="_blank">Cliquez-ici pour plus
                     de
-                    détail sur l'indice pollution</a>
+                    détail</a>
                 </div>
               </div>
               <div>
@@ -135,7 +148,7 @@
           <div class="tab"><input id="tab-3" name="tab-group-1" type="radio" /> <label for="tab-3">Sud</label>
             <div class="content">
               <div class="row">
-                <div class="col" style="text-align: center">
+                <div class="col" id="col-text">
                   <h2>Entre Garonne aval et la Ramée</h2>
                   <br>
                   <p>
@@ -151,33 +164,39 @@
                     Tournefeuille.
                   </p>
                 </div>
-                <div class="col" style="text-align:right">
+                <div class="col" id="col-img">
                   <a href="assets/Sud.jpg" target="_blank">
-                    <img src="assets/Sud.jpg" style="height:300px;width:300px" alt="error">
+                    <img src="assets/Sud.jpg" id="img" alt="error">
+                    <p style="padding-right: 90px">Cliquez sur l'image</p>
                   </a>
                 </div>
               </div>
               <br>
               <br>
+              <br>
               <hr>
               <br>
-              <div class="row" style="text-align:center">
+              <div id="titre-meteo">
+                <h4>Méteo des villes et pollution de la zone :</h4>
+                <br>
+              </div>
+              <div class="row" id="zone-meteo">
                 <div class="col">
-                  <p>Ville : {{ sudVille1 }}</p>
-                  <p>Ciel : {{ sudWeather1 }}</p>
-                  <p>Température : {{ sudTemp1 }} Celsus</p>
+                  <p><strong>{{ sudVille1 }}</strong></p>
+                  <p>{{ sudWeather1 }}</p>
+                  <p>{{ sudTemp1 }} Celsus</p>
                   <p>Vent : {{ sudWind1 }} km/h</p>
                 </div>
                 <div class="col">
-                  <p>Ville : {{ sudVille2 }}</p>
-                  <p>Ciel : {{ sudWeather2 }}</p>
-                  <p>Température : {{ sudTemp2 }} Celsus</p>
+                  <p><strong>{{ sudVille2 }}</strong></p>
+                  <p>{{ sudWeather2 }}</p>
+                  <p>{{ sudTemp2 }} Celsus</p>
                   <p>Vent : {{ sudWind2 }} km/h</p>
                 </div>
                 <div class="col">
-                  <p>Ville : {{ sudVille3 }}</p>
-                  <p>Ciel : {{ sudWeather3 }}</p>
-                  <p>Température : {{ sudTemp3 }} Celsus</p>
+                  <p><strong>{{ sudVille3 }}</strong></p>
+                  <p>{{ sudWeather3 }}</p>
+                  <p>{{ sudTemp3 }} Celsus</p>
                   <p>Vent : {{ sudWind3 }} km/h</p>
                 </div>
                 <div class="col">
@@ -185,7 +204,7 @@
                   <p>(1/5 très bon, 5/5 très mauvais)</p>
                   <a href="https://en.wikipedia.org/wiki/Air_quality_index#CAQI" target="_blank">Cliquez-ici pour plus
                     de
-                    détail sur l'indice pollution</a>
+                    détail</a>
                 </div>
               </div>
               <div>
@@ -196,7 +215,7 @@
           <div class="tab"><input id="tab-4" name="tab-group-1" type="radio" /> <label for="tab-4">Ouest</label>
             <div class="content">
               <div class="row">
-                <div class="col" style="text-align: center">
+                <div class="col" id="col-text">
                   <h2>De l'Aussonnelle à la forêt de Bouconne</h2>
                   <br>
                   <p>
@@ -214,9 +233,10 @@
                     peut-être croiser chevreuils, lièvres ou genettes.
                   </p>
                 </div>
-                <div class="col" style="text-align:right">
+                <div class="col" id="col-img">
                   <a href="assets/Ouest.jpg" target="_blank">
-                    <img src="assets/Ouest.jpg" style="height:300px;width:300px" alt="error">
+                    <img src="assets/Ouest.jpg" id="img" alt="error">
+                    <p style="padding-right: 90px">Cliquez sur l'image</p>
                   </a>
                 </div>
               </div>
@@ -224,23 +244,27 @@
               <br>
               <hr>
               <br>
-              <div class="row" style="text-align:center">
+              <div id="titre-meteo">
+                <h4>Méteo des villes et pollution de la zone :</h4>
+                <br>
+              </div>
+              <div class="row" id="zone-meteo">
                 <div class="col">
-                  <p>Ville : {{ ouestVille1 }}</p>
-                  <p>Ciel : {{ ouestWeather1 }}</p>
-                  <p>Température : {{ ouestTemp1 }} Celsus</p>
+                  <p><strong>{{ ouestVille1 }}</strong></p>
+                  <p>{{ ouestWeather1 }}</p>
+                  <p>{{ ouestTemp1 }} Celsus</p>
                   <p>Vent : {{ ouestWind1 }} km/h</p>
                 </div>
                 <div class="col">
-                  <p>Ville : {{ ouestVille2 }}</p>
-                  <p>Ciel : {{ ouestWeather2 }}</p>
-                  <p>Température : {{ ouestTemp2 }} Celsus</p>
+                  <p><strong>{{ ouestVille2 }}</strong></p>
+                  <p>{{ ouestWeather2 }}</p>
+                  <p>{{ ouestTemp2 }} Celsus</p>
                   <p>Vent : {{ ouestWind2 }} km/h</p>
                 </div>
                 <div class="col">
-                  <p>Ville : {{ ouestVille3 }}</p>
-                  <p>Ciel : {{ ouestWeather3 }}</p>
-                  <p>Température : {{ ouestTemp3 }} Celsus</p>
+                  <p><strong>{{ ouestVille3 }}</strong></p>
+                  <p>{{ ouestWeather3 }}</p>
+                  <p>{{ ouestTemp3 }} Celsus</p>
                   <p>Vent : {{ ouestWind3 }} km/h</p>
                 </div>
                 <div class="col">
@@ -248,7 +272,7 @@
                   <p>(1/5 très bon, 5/5 très mauvais)</p>
                   <a href="https://en.wikipedia.org/wiki/Air_quality_index#CAQI" target="_blank">Cliquez-ici pour plus
                     de
-                    détail sur l'indice pollution</a>
+                    détail</a>
                 </div>
               </div>
               <div>

@@ -1,0 +1,32 @@
+#main{
+    height: 600px;
+    background-color:rgba(195, 203, 214, 0.85); 
+    margin-top: 25px; 
+    border-radius: 10px; 
+    padding: 20px;
+}
+.card{
+    margin:10px; 
+    padding: 20px; 
+    overflow-y: scroll;
+}
+h3{
+    text-align: center; 
+    padding: 10px;
+}
+.col{
+    text-align: center;
+}
+#in{
+    width: 300px; 
+    border-radius: 10px;
+}
+#critere{
+    margin-left: 10px; 
+    border-radius: 10px; 
+    height: 30px; 
+    width: 150px;
+}
+#btn-recherche{
+    margin-left: -20px;
+}

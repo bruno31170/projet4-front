@@ -21,15 +21,6 @@ export class BoardAdminComponent implements OnInit {
   critereSelect: string = '';
 
   ngOnInit(): void {
-    this.userService.getAdminBoard().subscribe(
-      (data) => {
-        this.content = data;
-      },
-      (err) => {
-        this.content = JSON.parse(err.error).message;
-      }
-    );
-
     this.authService.getAllUser().subscribe((data) => {
       this.listUser = data;
       this.listUserFiltrer = data;

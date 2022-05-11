@@ -30,3 +30,10 @@ label {
   -webkit-border-radius: 50%;
   border-radius: 50%;
 }
+#main-div{
+  border-radius: 10px; 
+  background-color:rgba(195, 203, 214);
+}
+h3{
+  text-align: center;
+}
